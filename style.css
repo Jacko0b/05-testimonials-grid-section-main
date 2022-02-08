@@ -1,0 +1,46 @@
+:root {
+    /* color */
+    --c-primary-violet: hsl(263, 55%, 52%);
+    --c-primary-gray: hsl(217, 19%, 35%);
+    --c-primary-navy: hsl(219, 29%, 14%);
+    --c-primary-white: hsl(0, 0%, 100%);
+    --c-neutral-light-gray: hsl(0, 0%, 81%);
+    --c-neutral-gray: hsl(210, 46%, 95%);
+  
+    /* font family */
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+    
+    /* font weight */
+    --fw-500: 500;
+    --fw-600: 600;
+  
+    /*  font size
+    11px
+    13px
+    20px */
+    --fs-300: 0.6875rem;
+    --fs-400: 0.8125rem;
+    --fs-500: 1.25rem;
+  }
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.testimonial-header{
+display: flex;
+}
