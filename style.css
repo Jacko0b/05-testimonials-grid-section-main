@@ -50,6 +50,7 @@ body{
     margin-top: 10%;
     display: grid;
     gap: 1.5rem;
+    grid-auto-columns: 1fr;
     grid-template-areas:
     'one'
     'two'
@@ -58,7 +59,24 @@ body{
     'five';
 
     padding: 2rem;
-    
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+@media screen and ( min-width: 33rem){
+    .testimonial-grid{
+        grid-template-areas: 
+        'one one'
+        'two four'
+        'three four'
+        'five five';
+    }
+}
+@media screen and ( min-width: 54rem){
+    .testimonial-grid{
+        grid-template-areas: 
+        'one one two five'
+        'three four four five';
+    }
 }
 .testimonial{
     padding: 2rem;
